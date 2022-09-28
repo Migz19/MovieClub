@@ -1,17 +1,11 @@
-package com.example.movieclub.UI;
+package com.example.movieclub.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.HandlerThread;
-import android.view.View;
-
-import com.example.movieclub.Adapter.VpAdapter;
+import com.example.movieclub.adapter.VpAdapter;
 import com.example.movieclub.databinding.ActivityMainBinding;
 import com.example.movieclub.db.MoviesDB;
 import com.google.android.material.tabs.TabLayout;

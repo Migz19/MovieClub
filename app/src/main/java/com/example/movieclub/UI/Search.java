@@ -1,4 +1,4 @@
-package com.example.movieclub.UI;
+package com.example.movieclub.ui;
 
 import android.os.Bundle;
 

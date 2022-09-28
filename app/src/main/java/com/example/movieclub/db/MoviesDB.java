@@ -6,7 +6,7 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-import com.example.movieclub.Pojo.MovieModel.Results;
+import com.example.movieclub.MovieModel.Results;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

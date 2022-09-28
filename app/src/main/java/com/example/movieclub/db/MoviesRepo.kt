@@ -2,8 +2,8 @@ package com.example.movieclub.db
 
 import android.content.Context
 import androidx.lifecycle.MutableLiveData
-import com.example.movieclub.Pojo.MovieModel.MovieModel
-import com.example.movieclub.Pojo.MovieModel.Results
+import com.example.movieclub.MovieModel.MovieModel
+import com.example.movieclub.MovieModel.Results
 import com.example.movieclub.Retrofit.RetroClient
 import retrofit2.Call
 import retrofit2.Callback

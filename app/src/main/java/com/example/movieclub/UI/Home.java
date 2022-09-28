@@ -1,4 +1,4 @@
-package com.example.movieclub.UI;
+package com.example.movieclub.ui;
 
 import android.os.Bundle;
 
@@ -13,9 +13,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.example.movieclub.Adapter.MoviesAdapter;
-import com.example.movieclub.Adapter.Onclick;
-import com.example.movieclub.Pojo.MovieModel.Results;
+import com.example.movieclub.adapter.MoviesAdapter;
+import com.example.movieclub.adapter.Onclick;
+import com.example.movieclub.MovieModel.Results;
 import com.example.movieclub.databinding.FragmentHomeBinding;
 import com.example.movieclub.db.MoviesDB;
 

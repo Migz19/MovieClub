@@ -1,6 +1,6 @@
-package com.example.movieclub.Adapter;
+package com.example.movieclub.adapter;
 
-import com.example.movieclub.Pojo.MovieModel.Results;
+import com.example.movieclub.MovieModel.Results;
 
 public interface Onclick {
     public void onItemClick(Results movie);

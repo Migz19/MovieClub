@@ -1,4 +1,4 @@
-package com.example.movieclub.Pojo.MovieModel;
+package com.example.movieclub.MovieModel;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;

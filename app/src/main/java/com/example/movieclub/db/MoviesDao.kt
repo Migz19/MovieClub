@@ -5,7 +5,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.example.movieclub.Pojo.MovieModel.Results
+import com.example.movieclub.MovieModel.Results
 
 @Dao
 interface MoviesDao {

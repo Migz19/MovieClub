@@ -1,8 +1,8 @@
-package com.example.movieclub.Retrofit;
+package com.example.movieclub.retrofit;
 
 import com.example.movieclub.BuildConfig;
-import com.example.movieclub.Pojo.MovieModel.MovieModel;
-import com.example.movieclub.Pojo.MovieModel.Results;
+import com.example.movieclub.MovieModel.MovieModel;
+import com.example.movieclub.MovieModel.Results;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -17,21 +17,22 @@ public interface Api_Interface {
             @Query ("sort_by")String sort
     );
     @GET("trending/{media_type}/{time_window}?api_key="+API_KEY)
-    public Call <MovieModel>getTrending(
+     Call <MovieModel>getTrending(
             @Path("media_type")String media_type,
             @Path("time_window")String time_window,
             @Query("include_adult")boolean adult,
             @Query("sort_by") String sort
     );
     @GET ("movie/{movie_id}?api_key="+API_KEY)
-    public Call <Results> getMovie(@Path("movie_id")int movie_id);
+     Call <Results> getMovie(@Path("movie_id")int movie_id);
+
     @GET("movie/upcoming?api_key="+API_KEY)
-    public Call <MovieModel> getUpcoming(
+     Call <MovieModel> getUpcoming(
             @Query("include_adult")boolean adult,
             @Query ("sort_by")String sort
     );
     @GET("movie/top_rated?api_key="+API_KEY)
-    public Call <MovieModel> getTopRated(
+     Call <MovieModel> getTopRated(
             @Query("include_adult")boolean adult,
             @Query ("sort_by")String sort
     );

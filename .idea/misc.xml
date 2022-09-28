@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Android/MovieClub/app/src/main/res/drawable/splash_screen.xml" value="0.2425" />
         <entry key="..\:/Android/MovieClub/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Android/MovieClub/app/src/main/res/layout/activity_splash.xml" value="0.23645833333333333" />
         <entry key="..\:/Android/MovieClub/app/src/main/res/layout/fav_recyclerview.xml" value="0.15294117647058825" />
         <entry key="..\:/Android/MovieClub/app/src/main/res/layout/fragment_favourites.xml" value="0.1" />
         <entry key="..\:/Android/MovieClub/app/src/main/res/layout/fragment_home.xml" value="0.14444444444444443" />

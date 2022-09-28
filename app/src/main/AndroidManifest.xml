@@ -12,12 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieClub">
         <activity
-            android:name=".UI.SplashActivity"
+            android:name=".ui.SplashActivity"
             android:exported="true"
             android:theme="@style/SplashScreen"
             />
         <activity
-            android:name=".UI.MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

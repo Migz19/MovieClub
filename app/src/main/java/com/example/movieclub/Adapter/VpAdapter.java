@@ -1,13 +1,13 @@
-package com.example.movieclub.Adapter;
+package com.example.movieclub.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import com.example.movieclub.UI.Favourites;
-import com.example.movieclub.UI.Home;
-import com.example.movieclub.UI.Search;
+import com.example.movieclub.ui.Favourites;
+import com.example.movieclub.ui.Home;
+import com.example.movieclub.ui.Search;
 
 import java.util.ArrayList;
 

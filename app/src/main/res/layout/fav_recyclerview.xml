@@ -1,64 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="@dimen/_180sdp"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.cardview.widget.CardView
+    <data>
+        <variable
+            name="movie"
+            type="com.example.movieclub.MovieModel.Results" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_height="@dimen/_180sdp" >
+        android:layout_height="@dimen/_180sdp">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="@dimen/_180sdp">
 
-            <ImageView
-                android:id="@+id/favIV"
-                android:layout_width="@dimen/_140sdp"
-                android:layout_height="148dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="6dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:src="@tools:sample/avatars" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/titleFavTV"
-                android:layout_width="@dimen/_150sdp"
-                android:layout_height="@dimen/_35sdp"
-                android:layout_marginStart="11dp"
-                android:layout_marginTop="@dimen/_8sdp"
-                android:layout_marginEnd="8dp"
-                android:text="TextView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/favIV"
-                app:layout_constraintTop_toTopOf="parent" />
+                <ImageView
+                    android:id="@+id/favIV"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="148dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="6dp"
+                    setPoster="@{movie.setPoster"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@tools:sample/avatars" />
 
-            <TextView
-                android:id="@+id/overviewFavTV"
-                android:layout_width="@dimen/_150sdp"
-                android:layout_height="@dimen/_60sdp"
-                android:layout_marginStart="@dimen/_10sdp"
-                android:layout_marginEnd="6dp"
-                android:padding="@dimen/_8sdp"
-                android:text="TextView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/favIV"
-                app:layout_constraintTop_toBottomOf="@+id/titleFavTV" />
+                <TextView
+                    android:id="@+id/titleFavTV"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="8dp"
+                    setTitle="@{movie.setTitle}"
+                    android:text="TextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/favIV"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/dateFavTV"
-                android:layout_width="@dimen/_150sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:layout_marginStart="11dp"
-                android:layout_marginEnd="8dp"
-                android:text="TextView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/favIV"
-                app:layout_constraintTop_toBottomOf="@+id/overviewFavTV" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/overviewFavTV"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="6dp"
+                    android:padding="@dimen/_8sdp"
+                    android:text="TextView"
+                    setOverview="@{movie.setOverview}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/favIV"
+                    app:layout_constraintTop_toBottomOf="@+id/titleFavTV" />
+
+                <TextView
+                    android:id="@+id/dateFavTV"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="TextView"
+                    setDate="@{movie.setRelease_date}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/favIV"
+                    app:layout_constraintTop_toBottomOf="@+id/overviewFavTV" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

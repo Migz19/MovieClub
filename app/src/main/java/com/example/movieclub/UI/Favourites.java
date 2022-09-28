@@ -1,4 +1,4 @@
-package com.example.movieclub.UI;
+package com.example.movieclub.ui;
 
 import android.os.Bundle;
 
@@ -11,11 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.movieclub.Adapter.FavouritesAdapter;
-import com.example.movieclub.Pojo.MovieModel.Results;
+import com.example.movieclub.adapter.FavouritesAdapter;
 import com.example.movieclub.databinding.FragmentFavouritesBinding;
-
-import java.util.ArrayList;
 
 public class Favourites extends Fragment {
 FavouritesAdapter adapter;
@@ -36,11 +33,11 @@ MoviesVM movieVM ;
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding = FragmentFavouritesBinding.inflate(getLayoutInflater(),container,false);
-        ArrayList<Results> favList = movieVM.getFavouriteList().getValue();
-        adapter= new FavouritesAdapter(favList);
-        /*movieVM.getFavouriteList().observe(getViewLifecycleOwner(), results -> {
-            adapter.setFavList(results);
-        });*/
+        //ArrayList<Results> favList = movieVM.getFavouriteList().getValue();
+        adapter= new FavouritesAdapter();
+        movieVM.getFavouriteList().observe(getViewLifecycleOwner(), results -> {
+            adapter.submitList(results);
+        });
 
         bindRecycler();
         return binding.getRoot();
@@ -52,5 +49,4 @@ MoviesVM movieVM ;
         rv.setHasFixedSize(false);
         rv.setAdapter(adapter);
     }
-
 }

@@ -1,8 +1,8 @@
-package com.example.movieclub.UI
+package com.example.movieclub.ui
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
-import com.example.movieclub.Pojo.MovieModel.Results
+import com.example.movieclub.MovieModel.Results
 import com.example.movieclub.db.MoviesDB
 import com.example.movieclub.db.MoviesRepo
 

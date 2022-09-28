@@ -1,4 +1,4 @@
-package com.example.movieclub.Adapter;
+package com.example.movieclub.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.movieclub.Pojo.MovieModel.Results;
+import com.example.movieclub.MovieModel.Results;
 import com.example.movieclub.R;
 import com.squareup.picasso.Picasso;
 
