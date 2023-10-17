@@ -10,7 +10,7 @@ import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 public interface Api_Interface {
-    String API_KEY = BuildConfig.API_KEY;
+    String API_KEY = "844fc399f9e19fa60f68672ca29a948f";
     @GET("discover/movie?api_key="+API_KEY)
     public Call <MovieModel> getDiscoverMovies(
             @Query("include_adult")boolean adult,
